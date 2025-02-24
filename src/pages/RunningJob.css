@@ -1,0 +1,238 @@
+
+.container-jobs {
+  position: relative;
+  top: 150px;
+  left: 210px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two boxes per row by default */
+
+  gap: 20px;
+  max-width: 1200px;
+  width: 300%;
+}
+
+.box-jobs {
+  background-color: #ffffff;
+  color: white;
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 1.5rem;
+}
+.box-content-job{
+  position: relative;
+  top: -15px;
+  left: 20px;
+}
+
+/*Hub details*/
+.hub-details-job{
+  position: relative;
+  top: 40px;
+}
+
+.hub-name-job{
+  color: black;
+  position: relative;
+  left: -170px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.hub-subtext-job{
+  color: grey;
+  position: relative;
+  top: -10px;
+  left: -170px;
+  font-size: 20px;
+  
+
+}
+
+
+.machine-name-job{
+font-size: 20px;
+font-weight: bold;
+color: black;
+position: relative;
+top: 30px;
+left: -170px;
+}
+
+.machine-subtext-job{
+  position: relative;
+  left: -170px;
+  color: grey;
+  top: 18px;
+  font-size: 20px;
+
+}
+
+.End-Time-job{
+  color:black;
+  position: relative;
+  left: -170px;
+  font-size: 20px;
+  top: 16px;
+  font-weight: bold;
+}
+
+.Time-subtext-job{
+  color:grey;
+  position: relative;
+  left: -170px;
+  font-size: 18px;
+  top: 1px;
+  font-weight: bold;
+}
+
+.loader-container-job {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  left: 100px;
+  top:6px;
+
+}
+
+.circular-progress-job {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 7px 7px 15px #b8bcc2, -7px -7px 15px #ffffff;
+  background: #e0e5ec;
+}
+
+.progress-svg-job {
+  transform: rotate(-90deg);
+}
+
+.progress-background-job,
+.progress-bar-job {
+  fill: none;
+  stroke-width: 10;
+  r: 45;
+  cx: 50;
+  cy: 50;
+}
+
+.progress-background-job {
+  stroke: #dcdfe3;
+}
+
+.progress-bar-job {
+  stroke: #3d85c6;
+  stroke-linecap: round;
+  stroke-dasharray: 282.6;
+  stroke-dashoffset: 282.6;
+  transition: stroke-dashoffset 0.5s ease-out;
+}
+
+.progress-percentage-job {
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3d85c6;
+}
+
+.error-circle-job {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #e0e5ec;
+  box-shadow: inset 7px 7px 15px #b8bcc2, inset -7px -7px 15px #ffffff;
+  animation: fadeOut 0.5s ease-out;
+}
+
+.error-message-job {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #d9534f;
+  text-align: center;
+  padding: 6px;
+  margin-right: 15px;
+}
+
+/* Animations */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.5;
+    transform: scale(0.95);
+  }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .container-jobs {
+    flex-direction: row;
+    grid-template-columns: 1fr; 
+    
+    height: 200px;
+    width: 325px;
+    position: relative;
+    left: 20px;
+  margin-top: -30px;
+    gap: 30px;
+  
+  }
+.hub-details-job{
+  position: relative;
+  left: 120px;
+  
+}
+.hub-name-job{
+  position: relative;
+  left: -174px;
+}
+
+.hub-subtext-job{
+  font-size: 15px;
+  position: relative;
+  left: -155px;
+}
+.machine-details-job{
+  position: relative;
+  left: 118px;
+
+}
+.machine-subtext-job{
+  font-size: 18px;
+  position: relative;
+  left: -186px;
+}
+
+.Time-job{
+  position: relative;
+  left: 118px;
+}
+
+
+  
+
+  .loader-container-job {
+    position: relative;
+    left: 25px;
+  }
+
+}

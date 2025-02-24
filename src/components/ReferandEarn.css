@@ -1,0 +1,145 @@
+.refer-box{
+    width: 85%; 
+    background-size: cover;
+    height: 200px;
+    margin: 0 auto; /* Centered with top margin */
+    position: relative;
+    top: 40px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(19, 69, 138, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+
+.code-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -850px;
+    top: 35px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-top: 2px;
+    height: 30px;
+    
+    margin-top: 25px;
+    width: 280px;
+  }
+  
+  .code {
+    font-size: 16px;
+    color: #333;
+    margin-right: 10px;
+  }
+  
+  .code-value {
+    font-weight: bold;
+    color: #007BFF;
+  }
+  
+  .copy-button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #000000;
+    display: flex;
+    align-items: center;
+  }
+  
+  .copy-button:hover {
+    color: #000000;
+  }
+  
+  
+  .image-container {
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .right-image {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 8px;
+    position: absolute;
+    left: 900px;
+    top: -110px;
+  }
+
+ .heading{
+    position: relative;
+    top: -60px;
+    font-size: 30px;
+
+
+ }
+ .responsive-break {
+    display: none; 
+  }
+  
+
+ .description{
+    position: relative;
+    left: -400px;
+    top: -20px;
+    color: grey;
+ 
+ }
+
+ @media (max-width: 762px){
+
+    .refer-box{
+        position: relative;
+        top: 430px;
+        width: 325px;
+        height: 180px;
+    }
+    .heading{
+       font-size: 18px;        
+       white-space: nowrap;    
+       text-overflow: ellipsis;
+
+    }
+    .description{
+    position: relative;
+    left: -170px;
+    white-space: nowrap;    
+   
+    
+    
+     }
+     .responsive-break {
+        display: inline;
+      }
+
+      .code-container{
+        position: relative;
+        left: -340px;
+       
+      }
+    .code{
+
+    white-space: nowrap;    
+    text-overflow: ellipsis;
+    
+}
+.right-image{
+    left: 176px;
+    max-width: 150px;
+    max-height: 120px;
+}
+
+
+ }

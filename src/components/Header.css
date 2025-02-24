@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+
+.responsive-box {
+  width: 85%; /* Responsive width */
+  max-width: 1330px;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdikdjqo-AzeBo2g4ICgCPSDErLcaM1BtD5RbP9B4C_m4v7aiBqL8gO6KbiXruw1pf9CY&usqp=CAU'); /* Replace with your image link */
+  background-size: cover;
+  height: 150px;
+  margin: 30px auto 0 auto; /* Centered with top margin */
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(19, 69, 138, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.box-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  
+}
+
+.text-section {
+  flex: 1;
+}
+
+.main-text {
+  font-size: 2rem;
+  margin: 0;
+  color: #ffffff;
+  font-family: Montserrat;
+  position: relative;
+  top: 60px;
+}
+
+.sub-text {
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: Montserrat;
+  position: relative;
+  top:60px;
+}
+
+.qr-section {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 50px;
+}
+
+.qr-placeholder {
+  width: 100px;
+  height: 100px;
+  background-color: #ddd;
+  display: flex;
+  justify-content: right;
+  position: relative;
+  left: 520px;
+  top: -40px;
+
+  border-radius: 4px;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Slide-up animation */
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-up {
+  animation: slideUp 2s ease-out;
+}
+
+@media (max-width: 768px) {
+  .responsive-box {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start; 
+    width: 330px;
+    height: 150px;
+    margin-right: 13px;
+    margin-top: 80px;
+    
+  }
+
+  .box-content {
+    flex-direction: column;
+  }
+
+  .qr-section {
+    margin-top: 15px;
+  }
+
+  .main-text {
+    font-size: 1.5rem;
+    position: relative;
+    top: 50px;
+  }
+
+  .sub-text {
+    font-size: 0.7rem;
+    position: relative;
+    top: 40px;
+    left: 2px;
+  }
+
+  .qr-placeholder {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    left: 30px;
+    top: -50px;
+  }
+}
+
+

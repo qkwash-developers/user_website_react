@@ -1,0 +1,180 @@
+
+.payment-detail-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+
+.receipt-popup {
+  width: 300px;
+  height: 350px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+.status-complete {
+  color: #28a745;
+  font-weight: bold;
+}
+
+
+
+.receipt-popup {
+  animation: popupAnimation 0.5s ease-out;
+}
+
+@keyframes popupAnimation {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.receipt-header {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.receipt-header h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000000;
+}
+
+
+.receipt-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.receipt-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.receipt-row span:first-child {
+  font-weight: 600;
+  color: #000000;
+}
+
+.receipt-row span:last-child {
+  font-weight: 400;
+  color: #000000;
+}
+
+
+.receipt-footer {
+  display: flex;
+  justify-content: space-between; 
+  gap: 15px; 
+  margin-top: auto; 
+}
+
+.continue-button
+{
+  background-color: #007bff; 
+  position: relative;
+  left: 60px;
+  text-decoration: none;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 48%;
+  height: 20px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.continue-button:hover,
+.download-button:hover {
+  background-color: #0056b3; 
+}
+
+
+@media (max-width: 500px) {
+  .receipt-popup {
+    width: 300px;
+    height: auto;
+  }
+
+  .receipt-header h2 {
+    font-size: 18px;
+  }
+
+  .continue-button,
+  .download-button {
+    width: 100%;
+    position: relative;
+    left: 5px;
+  }
+}
+
+
+.continue-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7); 
+  backdrop-filter: blur(10px); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; 
+}
+
+.continue-popup {
+  background: rgba(255, 255, 255, 0.9); 
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.continue-popup h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.continue-popup p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.start-button {
+  background-color: #007bff; 
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #007bff; 
+}

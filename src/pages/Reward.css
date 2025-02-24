@@ -1,0 +1,28 @@
+.scratch-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .scratch-area {
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: crosshair;
+  }
+  
+  .reward {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .reward-image {
+    max-width: 300%;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  

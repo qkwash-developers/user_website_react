@@ -1,0 +1,330 @@
+
+.payment-page {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+
+
+  .table-row.offer-row {
+    background-color: #f0f8ff;
+    font-weight: bold;
+  }
+  
+  .table-row.offer-row span {
+    text-align: right;
+    color: #008080; /* Color for the offer amount */
+  }
+
+
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.8); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px); 
+    z-index: 1000;
+  }
+  
+  
+  .popup-box {
+    width: 500px;
+    height: 500px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+
+  .close-popup {
+    position: absolute;
+    top: 20px;
+    text-decoration: none;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: grey;
+    border: none;
+    border-radius: 50%; 
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.2s ease;
+  }
+  
+  .close-popup:hover {
+    background: #bbb;
+  }
+
+
+  
+  .popup-title {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 55px;
+    left: 130px;
+  }
+  
+  .popup-subtitle {
+    position: absolute;
+    top: 115px;
+    left: 190px;
+  
+  }
+  
+  .popup-id {
+    color: #888;
+  }
+
+
+  .table-container {
+    display: flex;
+    position: absolute;
+    left: 100px;
+    width: 450px;
+    left:45px;
+    top: 190px;
+    flex-direction: column;
+    max-height: 250px;
+    overflow-y: auto; 
+  }
+  
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ffffff;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+
+  .header-divider {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 0 0 10px;
+  }
+  
+
+  .table-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .table-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .table-row:last-child {
+    border-bottom: none;
+  }
+
+  .total-amount {
+    margin-top: 100px;
+    margin-left: 260px;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .total-row {
+    font-weight: bold;
+    font-size: 16px;
+    background-color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-top: 20px;
+    
+
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    box-shadow: inset 6px 6px 10px rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+  }
+  
+
+  .total-row span:last-child {
+    color: #2c3e50; 
+  }
+
+
+
+  .payment-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+
+  .payment-button {
+    background-color: #007bff; 
+    color: white;
+    position: absolute;
+
+    top: 470px;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .payment-button:hover {
+    background-color: #007bff; 
+  }
+
+  .payment-button{
+    text-decoration: none;
+  }
+
+  .success-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+  }
+  
+
+  .success-popup {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: #28a745;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+
+  .success-shadow-circle {
+    width: 120px;
+    height: 120px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+  
+ 
+  .success-icon {
+    font-size: 60px;
+    color: #28a745;
+    animation: scaleUp 0.8s ease-out forwards;
+  }
+  
+
+  @keyframes scaleUp {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+
+  .success-message {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    z-index: 1;
+  }
+  @media (max-width: 768px) {
+    .popup-box{
+      width: 300px;
+      height: 500px;
+    }
+    .popup-title {
+      font-size: 20px;
+      font-weight: bold;
+      position: relative;
+      left: -4px;
+      top: -30px;
+     
+    }
+    .table-container{
+      width: 280px;
+      position: relative;
+      top: -20px;
+      left: -5px;
+    }
+
+    .table-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 16px;
+      padding: 6px 0;
+      white-space: nowrap;    
+      text-overflow: ellipsis;
+      gap: 2px;
+    }
+    .popup-subtitle{
+      white-space: nowrap;    
+      text-overflow: ellipsis;
+      position: relative;
+      top: -38px;
+      left: -10px;
+
+     
+    }
+    .success-popup {
+      width: 330px;
+    }
+  }

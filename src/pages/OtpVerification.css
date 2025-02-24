@@ -1,0 +1,159 @@
+
+
+  
+
+.otp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .verification-image {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+  
+
+  .otp-box {
+    width: 270px;
+    max-width: 90%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+
+  .otp-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+
+  .otp-image {
+    width: 100%;
+    max-height: 30%;
+    margin-bottom: 20px;
+    object-fit: contain;
+  }
+  
+
+  .otp-text {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+
+  .otp-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  
+  .otp-input {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .otp-input:focus {
+    border-color: #007bff;
+  }
+  
+
+  .verify-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .verify-button:hover {
+    background-color: #0056b3;
+  }
+
+  .verified-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .verified-icon {
+    margin-bottom: 25px;
+  }
+  
+  .verified-text {
+    font-size: 18px;
+    color: green;
+  }
+
+  .resend-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+
+  .resend-button {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .resend-button:disabled {
+    color: gray;
+    cursor: not-allowed;
+  }
+  .tick {
+    width: 40px;
+    height: 20px;
+    border-bottom: 4px solid rgb(0, 152, 48);
+    border-left: 4px solid rgb(38, 255, 0);
+    transform: rotate(-45deg);
+  }
+  
+
+  @media (max-width: 768px) {
+    .otp-box {
+      padding: 15px;
+    }
+  
+    .otp-title {
+      font-size: 20px;
+    }
+  
+    .otp-text {
+      font-size: 12px;
+    }
+  
+    .otp-input {
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
+    }
+  
+    .verify-button {
+      font-size: 14px;
+    }
+  }
+  

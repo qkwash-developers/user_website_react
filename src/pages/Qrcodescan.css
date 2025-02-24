@@ -1,0 +1,79 @@
+
+
+.container-qr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.box-qr {
+  width: 600px;
+  height: 400px;
+  background-color: white;
+  margin-left: 30px;
+  margin-top: 120px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+
+#camera-screen {
+  width: 300px;
+  height: 200px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.scanner-line {
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 150px;
+  width: 300px;
+  height: 2px;
+  background-color: red;
+  animation: scanning 5s linear infinite;
+}
+
+
+@keyframes scanning {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(100px);
+  }
+}
+
+
+.qr-result {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+  
+  text-align: center;
+}
+
+
+@media (max-width: 768px){
+  
+  .container-qr {
+    position: relative;
+    left: -14px;
+    top: -50px;
+  }
+  .scanner-line{
+    position: relative;
+    left: 1px;
+    top: -110px;
+  }
+}
